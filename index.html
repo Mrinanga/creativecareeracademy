@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Career Academy</title>
+    <link rel="icon" type="image/png" href="\PHOTOS\favicon.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #264094, #121f49);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        nav {
+            background-color: #345db4;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        /* Course container */
+        .course-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Individual course article */
+        .course img {
+            max-height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .course h3 {
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        button.apply-button {
+            background-color: #345db4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button.apply-button:hover {
+            background-color: #264094;
+        }
+
+        #home {
+            background-color: #ffeacf;
+        }
+
+        footer {
+            background: linear-gradient(to right, #264094, #121f49);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #maintenance-text {
+            background-color: #51009c;
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative Career Academy</h1>
+        <p>Empowering Your Future</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="/creativecareeracademy/admissionfiles/admission.php">Admissions</a></li>
+                <li><a href="#contact">Students Corner</a></li>
+                <li><a href="/creativecareeracademy/loginpage.html">Teachers Login</a></li>
+            </ul>
+        </nav>
+        <marquee id="maintenance-text" behavior="scroll" direction="left">This site is under maintenance. We apologize for any inconvenience.</marquee>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Creative Career Academy</h1>
+        <p>At Creative Career Academy, we are dedicated to helping individuals unlock their full potential and build rewarding careers in various creative fields.
+
+        Our comprehensive curriculum covers graphic design, web development, digital marketing, photography, and more. With experienced instructors,
+
+        state-of-the-art facilities, and a supportive learning environment, you can expect an engaging and effective educational experience that
+
+        will prepare you for success in today's dynamic job market.</p>
+    </section>
+
+    <!-- Our Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-container">
+            <article class="course">
+                <img src="https://i.postimg.cc/0ynZhzdt/Graphics-Designing.jpg">
+                <h3>Graphic Designing</h3>
+                <p>Learn the fundamentals of graphic designing including typography, layout, colors, and visual communication skills.</p>
+            </article>
+            
+            <article class="course">
+                <img src="https://i.postimg.cc/7671VhBY/video-editing.jpg" alt="Video Editing Thumbnail">
+                <h3>Video Editing</h3>
+                <p>Master video editing techniques using industry standard tools like Adobe Premiere Pro and Final Cut Pro.</p>
+            </article>
+            
+            <article class="course">
+                <img src="https://reforger.armaplatform.com/content/news/cinematic_tutorial/cinematic_tutorial_thumbnail.jpeg" alt="VFX Thumbnail">
+                <h3>VFX Tutorials</h3>
+                <p>Explore the world of Visual Effects through practical tutorials on creating stunning visual effects using software such as After Effects and Blender.</p>
+            </article>
+            
+            <article class="course">
+                <img src="https://i.postimg.cc/tCDTLbwq/Whats-App-Image-2024-05-06-at-21-00-14-ba476b5d.jpg" alt="Educational Thumbnail">
+                <h3>Educational</h3>
+                <p>Access a wide range of educational resources designed to help students improve their skills and knowledge in different areas.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="admissions">
+        <h2>Admissions</h2>
+        <p>Apply online for our courses!</p>
+        <button class="apply-button" onclick="location.href='admissionfiles/admission.php'">Click Here</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <!-- Contact information and form -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Creative Career Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

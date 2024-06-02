@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dashboard {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .teacher-list {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .add-teacher {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Teacher Management</div>
+            <div class="links">
+                <a href="#">Dashboard</a>
+                <a href="#">Teachers</a>
+                <a href="#">Courses</a>
+                <a href="#">Settings</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <!-- Dashboard content -->
+        </section>
+        <section class="teacher-list">
+            <h2>Teacher List</h2>
+            <div class="filters">
+                <!-- Filter and sort options -->
+                <label for="role">Role:</label>
+                <select id="role">
+                    <option value="all">All</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <label for="department">Department:</label>
+                <select id="department">
+                    <option value="all">All</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="english">English</option>
+                </select>
+                <label for="status">Status:</label>
+                <select id="status">
+                    <option value="all">All</option>
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                    <option value="pending">Pending</option>
+                </select>
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="name_asc">Name (A-Z)</option>
+                    <option value="name_desc">Name (Z-A)</option>
+                    <option value="email_asc">Email (A-Z)</option>
+                    <option value="email_desc">Email (Z-A)</option>
+                    <option value="last_login_asc">Last Login (Oldest)</option>
+                    <option value="last_login_desc">Last Login (Newest)</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Teacher entries -->
+                </tbody>
+            </table>
+            <div class="pagination">
+                <!-- Pagination content -->
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+            <button class="add-teacher">Add New Teacher</button>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,243 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #001033;
+    color: #e2fcde;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: none;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+#logo {
+    padding-left: 10px;
+    padding-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transform: translate(-4%,0%);
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+#logo-img {
+    width: 40px;
+    margin-right: 10px;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #001033;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+section#students{
+    margin-bottom: -20px;
+}
+/* Form Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+
+
+/* Fieldset Styling */
+fieldset {
+    border: none;
+}
+
+legend {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e2fcde;;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #80CBC4;
+}
+
+ #year-of-passing {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #80cbc366;
+    background-color: #001F46;
+    color: #e2fcde;
+    resize: none; /* Add this line to prevent resizing */
+}
+
+input#ctime {
+    color: #e2fcde;
+    font-family: poppins;
+    font-size: large;
+    padding-inline-start: 1px;
+    cursor: default;
+    overflow: hidden;
+    padding: 0px;
+    border-radius: 10px;
+    border: 0px solid #80cbc366;
+    background-color: #001033;
+}
+
+input#ctime::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input#ctime:focus{
+    outline: none;
+}
+
+input#ctime:focus::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+/* Input Styling */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #80cbc366;
+    background-color: #001F46;
+    color: #e2fcde;
+}
+
+/* Non-resizable Textarea */
+textarea {
+    resize: none;
+}
+
+/* Submit Button Styling */
+button[type="reset"],
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #80CBC4;
+    border: none;
+    border-radius: 5px;
+    color: #001033;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f9ffff;
+}
+
+button[type="reset"]:hover {
+    background-color: #f9ffff;
+}
+
+/* CSS for image upload functionality */
+
+/* Style the checkbox */
+#declaration {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #80cbc366;
+    margin-left: 16px;
+    background-color: #001F46;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style the checkbox when checked */
+#declaration:checked {
+    background-color: #80CBC4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Style the label for the checkbox */
+label[for="declaration"] {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e2fcde;
+}
+
+
+#drop-area {
+    border: 2px dashed #aee7e185;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #001F46;
+    color: #e2fcde;
+    text-align: center;
+    cursor: pointer;
+}
+
+.highlight {
+    border-color: #4A9D9A;
+}
+
+.button {
+    
+    background-color: #80CBC4;
+    color: #001033;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4A9D9A;
+}
+
+#gallery {
+    margin-top: 10px;
+}
+
+#gallery img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+section .button-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 8vh;
+    padding-top: 3vh
+}
